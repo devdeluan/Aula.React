@@ -9,7 +9,8 @@ import Insta from "../../assets/img/instagram.svg";
 import Linkedin from "../../assets/img/linkedin.svg";
 
 function Home() {
-    // Paranaue de TypeScript e retorna o HTML embaixo
+
+// Paranaue de TypeScript e retorna o HTML embaixo
 
     function MostraMenu() {
 
@@ -67,6 +68,7 @@ function Home() {
                 </a>
                 <a className="header_botao_login" href="../Login/index.html">login</a>
             </nav>
+
         </div>
     </header>
     <main id="main">
