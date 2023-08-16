@@ -1,12 +1,8 @@
 import "./style.css"
-import Logo from "../../assets/img/logo.svg";
 import Clientes from "../../assets/img/clientes.png";
 import Maos from "../../assets/img/maos_dev.png";
 import Alfinete from "../../assets/img/alfinete.png";
-import Dev from "../../assets/img/dev.png";
-import Face from "../../assets/img/facebook.svg";
-import Insta from "../../assets/img/instagram.svg";
-import Linkedin from "../../assets/img/linkedin.svg";
+
 
 function Home() {
 
