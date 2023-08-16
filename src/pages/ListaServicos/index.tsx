@@ -12,26 +12,11 @@ export default function ListaServicos() {
   const [serv, setDevs] = useState<any[]>([
 
     {
-        skills: ["HTML", "CSS", "REACT"]
+      img_perfil: "https://github.com/Thiago-Nascimento.png",
+      projeto: "Desenvolvimento de site institucional - Gateway de Pagamento/ Fintech",
+      valor: "R$ 1300,00",
+      skills: ["HTML", "CSS", "REACT"]
     },
-    {
-        img_perfil: "https://github.com/JessicaSanto.png",
-        nome: "Jessica Franzon",
-        email: "jessica@email.com",
-        skills: ["HTML", "CSS", "REACT"]
-    },
-    {
-        img_perfil: "https://github.com/odirlei-assis.png",
-        nome: "Odirlei Sabella",
-        email: "odirlei@email.com",
-        skills: ["HTML", "CSS", "ANGULAR"]
-    },
-    {
-        img_perfil: "https://github.com/alexiamelhado18.png",
-        nome: "Aléxia Vitória",
-        email: "alexia@email.com",
-        skills: ["PYTHON", "VUE", "REACT"]
-    }
 
 ]);
 
@@ -45,14 +30,14 @@ function buscarPorSkill(event: any){
 
     const ServFiltrados = serv.filter((dev: any) => dev.skills.includes(skillDigitada.toLocaleUpperCase()));
 
-    if(servFiltrados.length === 0){
-        alert("Nenhum desenvolvedor(a) com essa skill")
+    if(ServFiltrados.length === 0){
+        alert("Nenhum serviço com essa skill")
     }else{
-        setListaServFiltrados(servFiltrados)
+        setListaServFiltrados(ServFiltrados)
     }
 }
 
-function retornoDevsGeral(event: any){
+function retornoServGeral(event: any){
     if(event.target.value === ""){
         setListaServFiltrados(serv)
     }
@@ -100,8 +85,7 @@ return (
                 type="search"
                 name="campo-busca"
                 id="busca"
-                placeholder="Buscar serviços por tecnologias..."
-              />
+                placeholder="Buscar serviços por tecnologias..." onChange={retornoServGeral}/>
               <button type="submit">Buscar</button>
             </div>
           </div>
@@ -119,6 +103,7 @@ return (
                                      />
                               </li>
           }
+          )}
             <li>
 
             </li>

@@ -6,8 +6,8 @@ export default function CardServ(props: any) {
 
         <div className="servico">
         <div className="topo_servico">
-          <h3>Desenvolvimento de site institucional - Gateway de Pagamento/ Fintech</h3>
-          <span>R$ 1300,00</span>
+          <h3> { props.projeto }</h3>
+          <span>{ props.valor }</span>
         </div>
         <p>Desenvolver um site responsivo que seja utilizado como uma
           plataforma de apresentação do nosso gateway de pagamento. O
